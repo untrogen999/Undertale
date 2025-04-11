@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="images/characters/dog.png"/>
+        <link rel="stylesheet" href="Undertale.css" />  
+        
+        <script type = "text/javascript" src = "undertale.js" ></script>
+        
+            <title>About</title>
+        
+        <meta charset="UTF-8" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <link rel="stylesheet" type="text/css" href="Undertale.css" />
+        
+ <style>
+#barking-dog {
+            background: url(images/dog.png);
+            background-repeat: no-repeat;
+            
+   width: 300px;
+    height: 80px;
+    margin-left: -1000px;
+    margin-top: -10px;
+    padding-bottom: 19px;
+}
+
+#barking-dog:hover {
+    background: url(images/dog-bark.png);
+    background-repeat: no-repeat;
+} 
+.game {
+  background-color: purple;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+}
+.license {
+  background-color: plum;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  font-family: verdana;
+}
+
+</style>
+    </head>
+    <body>
+        <audio id="bark">
+            <source  src="undertaleSFX/Undertale%20Sound%20Effects/borfborf.wav" ></source>
+        </audio>
+        <audio autoplay loop   >
+            <source src="music/Mus_dogsong.ogg" type="audio/ogg">
+            
+            Your browser does not support the audio element.
+        </audio>
+        
+    <center><table width="800" border="2">
+        <tr>
+            <th><a href="index.html">Home</a></th>
+            <th><a href="characters.html">Characters</a></th>
+            <th><a href="thegame.html">The Game</a></th>
+            <th><a href="data.html">Data</a></th>
+            <th><a href="process.html">Process</a></th>
+        </tr>
+    </table>
+        <div id="barking-dog" onmouseenter="PlaySound('bark')"></div>
+        <div class="game">
+            <h2>About the Game</h2>
+            <span class="mono">
+            <p>Undertale is a role-playing video game created by American indie developer Toby Fox.</p>
+            <p>The player controls a child who has fallen into the Underground: a large, secluded region under the surface of the Earth,</p>
+            <p>separated by a magic barrier. The player meets various monsters during the journey back to the surface. Some monsters might engage the player in a fight.</p>
+            <p>The combat system involves the player navigating through mini-bullet hell attacks by the opponent. They can opt to pacify or subdue monsters in</p>
+            <p>order to spare them instead of killing them. These choices affect the game, with the dialogue, characters, and story changing based on outcomes. </p>
+            </span>
+        </div> 
+        
+        <div class="game">
+            <h2>The Team</h2>
+           <center> <span class="mono"><table width="1300">
+                <tr>
+                    <th><p>Ben Hill</p>
+                        <a href="https://github.com/Bennediction"><img src="images/characters/ben.png" alt="Ben" style="width:45%"></a>
+                    <p>Bio:</p>
+                    <p>Ben is a junior at the University of Pittsburgh at Greensburg.</p>
+                    <p>He is a Music major, hoping to also pursue the Digital Studies Certificate.</p>
+                    <p>He really enjoys the game Undertale, he wants to purchase the Collectors Edition of Undertale.</p></th>
+                    <th><p>Robby Pernell</p>
+                        <a href="https://github.com/bobbyfunks"><img src="images/characters/robby.jpg" alt="Robby" style="width:60%"></a>
+                    <p>Bio:</p>
+                    <p>Robby is a junior at the University of Pittsburgh at Greensburg.</p>
+                    <p>He is a History major, he wants to pursue the Digitial Studies Certificate.</p>
+                    <p>He really enjoys sleeping and taking pictures of deer.</p></th>
+                    <th><p>Alexis Williams</p>
+                        <a href="https://github.com/ajw120"><img src="images/characters/lexi.jpg" alt="Alexis" style="width:45%"></a>
+                    <p>Bio:</p>
+                    <p>Alexis is a junior at the University of Pittsburgh at Greensburg.</p>
+                    <p>She is an English Writing major with a Psychology minor. She also wants to pursue the Digital Studies Certificate.</p>
+                    <p>She really loves Pokemon and other RPGs.</p></th>
+                </tr>
+            </table> </span></center>
+            
+           
+        </div>
+ <div class="game">
+                <h2>Our Statement</h2>
+           <span class="mono"> <p>RPG (role playing game) that incorporates the idea of human choice, allowing the player</p>
+            <p>to choose how they play the game. Throughout the game, the player can make friends with other</p>
+            <p>characters or rather see them as the enemy. In this project we hope to make a fun and</p>
+            <p>interactive experience for players and site viewers!</p>
+           <p>Credit to the Undertale wiki for information on the characters as well as compiling the music, pictures, and sound effects</p></span>
+     
+        </div></center>
+        <center><div class="license-container">
+            <div class="license">
+                <span>
+                    <strong>Created by: </strong>
+                    <a href="https://github.com/Bennediction">Ben Hill</a>, 
+                    <a href="https://github.com/bobbyfunks">Robby Pernell</a>, 
+                    <a href="https://github.com/ajw120">Alexis Williams</a>. 
+                    <a href="https://github.com/ajw120/Undertale">GitHub</a>. 
+                    <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license"> 
+                        <img style="border-width:0" alt="Creative Commons License" src="https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png"> 
+                    </a>
+                    <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license"></a> 
+                    <a href="http://newtfire.org/firebellies.html">Powered by firebellies</a>.
+                    <a href="https://undertale.com/">Credit: Undertale</a>.
+                </span>
+            </div>
+        </div></center>
+    </body>
+</html>

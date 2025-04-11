@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/Undertale.rnc" type="application/relax-ng-compact-syntax"?>
+<map name="newHome/DreemurrCastle">
+    <setting name="newHomeView">
+        <option what="gameNarr">
+        <sp speaker="game" to="you">
+            <box n="1">(The elevator is in use.)</box>
+        </sp>
+        </option>
+    </setting>
+    <setting name="asgore'sFoyer">
+      <option what="gameNarr">
+        <sp speaker="game" to="you">
+            <box n="1">*(It’s a golden flower.</box>
+        </sp>
+      </option> 
+      <option what="gameNarr">
+        <sp speaker="game" to="you">
+            <box n="2">*(The way is blocked by two padlocks.)*(There’s a note attached.)</box>
+        </sp>
+      </option>
+      <option what="gameNarr">
+        <sp speaker="game" to="you">
+            <box n="3">*(Howdy! I'm in the garden.)</box>
+            <box n="4">*(If you have anything you need to get off your chest, please don't hesitate to come.)</box>
+            <box n="5">*(The keys are in the kitchen and the hallway.)</box>
+            <box n="6">*(You'll need both keys to get through.)</box>
+        </sp>
+      </option> 
+        <sp speaker="game" to="you">
+        <box n="7">*(You unlocked the chain.)</box>
+        <box n="8">*(There's an old calendar from the end of 201X.) *(A date is circled on it.)</box>
+        </sp>
+    </setting>
+    <setting name="livingRoom">
+        <option what="gameNarr">
+           <sp speaker="game" to="you">
+               <box n="1">*Seems like gardening tools.</box>
+               <box n="2">*(There are photo albums...)*(Scrapbooks…)*(Books on how to make tea…)</box>
+               <box n="3">*The coals are still warm.</box>
+               <box n="4">*(It’s a great reading chair.)*(But it doesn't seem like anyone uses it.)</box>
+               <box n="5">*It’s a golden flower.</box>
+           </sp>
+           </option>
+    </setting>
+    <setting name="kitchen">
+        <option what="gameNarr">
+          <sp speaker="game" to="you">
+              <box n="1">*(The fridge is full of unopened containers of snails.)</box>
+              <box n="2">*(There is some white fur stuck in the drain.)</box>
+              <box n="3">*(It’s a note.)*Howdy! Help yourself to anything you want!</box>
+              <box n="4">*(You took the key and put it on your phone’s key-chain.)</box>
+              <box n="5">*(The stove top is very clean.)*(Someone must use fire magic instead.)</box>
+              <box n="6">*(It’s a trash can.)</box>
+              <box n="7">*(It’s full of crumpled-up recipes for butterscotch pie.)</box>
+          </sp>
+        </option>
+    </setting>
+    <setting name="bedrooms">
+        <option what="gameNarr">
+            <sp speaker="game" to="you">
+                <box n="1">*It’s a golden flower.</box>
+                <box n="2">*It’s a golden flower.</box>
+                <box n="3">*It’s a golden flower.</box>
+                <box n="4">*”Room under renovations.”</box>
+                <box n="5">*(You took the key and put it on your phone’s keychain.</box>
+                <box n="6">*Despite everything, it’s still you.</box>
+                <box n="7">*It’s a golden flower.</box>
+            </sp>
+        </option>
+    </setting>
+    <setting name="asgore'sRoom"> 
+        <option what="gameNarr">
+          <sp speaker="game" to="you">
+              <box n="1">*(It’s ASGORE’s journal.)*(All the current page says is ‘Nice day today!’)</box>
+              <box n="2">*(The ink is still almost wet.)</box>
+              <box n="3">*(It's just a chair.)</box>
+              <box n="4">*(It’s a king-sized bed.)</box>
+              <box n="5">*(Macaroni art of a flower.)*(‘For King Dad!’)</box>
+              <box n="6">*It's a bureau.</box>
+              <box n="7">*There's a Santa Claus outfit inside.</box>
+              <box n="8">*It’s a clothes drawer.*There are robes, button-up shirts…</box>
+              <box n="9">*...and a pink, hand-knit sweater that says 'Mr. Dad Guy.')</box>
+              <box n="8">*(It's a trophy.)*(Number 1 Nose-Nuzzle Champs '98!)</box>
+          </sp>
+        </option>
+    </setting>
+    <setting name="children'sRoom">
+        <option what="gameNarr">
+        <sp speaker="game" to="you">
+            <box n="1">*(Dusty toys.)</box>
+            <box n="2">*(It's a twin-sized bed.)</box>
+            <box n="3">*(There are a lot of striped shirts in here.)</box>
+            <box n="4">*(It's a family photograph.)*(Everyone is smiling.)</box>
+            <box n="5">*(It's a drawing of a golden flower.)</box>
+            <box n="6">*(What a comfortable bed.)*(If you laid down here, you might not ever get up.)</box>
+            <box n="7">*(You're carrying too much.)</box>
+            <box n="8">*(There's a worn dagger inside the box.)</box>
+            <box n="9">*(Will you take it?)</box>
+            <conditions taken="takeIt"/>
+                  <box n="10">*(You got the Worn dagger.)</box>
+                  <box n="11">*(There's a heart-shaped locket inside the box.)</box>
+                  <box n="12">*(Will you take it?)</box>
+            <conditions taken="takeIt"/>
+                  <box n="13">*(You got hte Heat-shaped Locket.)</box>
+                  <box n="14">*(The box is empty.)</box>
+                  <box n="15">*(The box is empty.)</box>
+        </sp>
+        </option> 
+    </setting>   
+    <setting name="coffins">
+        <option what="gameNarr">
+        <sp speaker="game" to="you">
+            <box n="1">*(it's a coffin.)*(There's a name engraved on it.)</box>
+            <box n="2">*("Chara.")</box>
+            <box n="3">*(It's empty.)</box>
+        </sp>
+        </option>
+    </setting>
+    
+    <path route="neutral">
+    <setting name="judgmentHall">
+           <sp speaker="Sans" to="you">
+               <box n="1">*So you finally made it.</box>
+               <box n="2">*The end of your journey is at hand.</box>
+               <box n="3">*In a few moments, you will meet the king.</box>
+               <box n="4">*Together...</box>
+               <box n="5">*You will determine the future of this world.</box>
+               <box n="6">*That's then.</box>
+               <box n="7">*Now.</box>
+               <box n="8">*You will be judged.</box>
+               <box n="9">*You will be judged for your every action.</box>
+               <box n="10">*You will be judged for every EXP you've earned.</box>
+               <box n="11">*What's EXP?</box>
+               <box n="12">*It's an acronym.</box>
+               <box n="13">*It stands for "execution points."</box>
+               <box n="14">*A way of quantifying the pain you have inflicted on others.</box>
+               <box n="15">*When you kill someone, your EXP increases.</box>
+               <box n="16">*When you have enough EXP, your LOVE increases.</box>
+               <box n="17">*LOVE, too, is an acronym.</box>
+               <box n="18">*It stands for "Level of Violence."</box>
+               <box n="19">*A way of measuring someone's capacity to hurt.</box>
+               <box n="20">*The more you kill, the easier it becomes to distance yourself.</box>
+               <box n="21">*The more you distance yourself, the less you will hurt.</box>
+               <box n="21">*The more easily you can bring yourself to hurt others.</box>
+                    <conditions killed="monstersKilled"/>
+                         <box n="1">*Now you understand.</box>
+                         <box n="2">*It's time to begin your judgment.</box>
+                         <box n="3">*Look inside yourself.</box>
+                         <box n="4">*Have you really done the right thing?</box>
+                         <box n="5">*And, considering what you've done...</box>
+                         <box n="6">*What will you do now?</box>
+                         <box n="7">*Take a moment to think about this.</box>
+                         <box n="8">*...</box>
+                         <box n="9">*Truthfully, it doesn't really matter what you said.</box>
+                         <box n="10">*all that's important is that you were honest with yourself.</box>
+                         <box n="11">*what happens now...</box>
+                         <box n="12">*we leave up to you.</box>
+           </sp>
+           <sp speaker="Sans" to="you">
+               <conditions killed="papyrus">
+                   <box n="1">*though...</box>
+                   <box n="2">*one thing about you always struck me as kinda odd.</box>
+                   <box n="3">*now, I understand acting in self defense.</box>
+                   <box n="4">*you were thrown into those situations against your will.</box>
+                   <box n="5">*but...</box>
+                   <box n="6">*sometimes...</box>
+                   <box n="7">*you act like you know what's going to happen.</box>
+                   <box n="8">*like you've already experienced it all before.</box>
+                   <box n="9">*this is an odd thing to say, but...</box>
+                   <box n="10">*if you have some sort of special power...</box>
+                   <box n="11">*isn't it your responsibility to do the right thing?</box>
+                           <box n="1">*heh.</box>
+                           <box n="2">*well, that's your viewpoint.</box>
+                           <box n="3">*I won't judge you for it.</box>
+                           <box n="4">*...</box>
+                           <box n="5">*You dirty brother killer.</box>
+                           <box n="1">*ah.</box>
+                           <box n="2">*I see.</box>
+                           <box n="3">*...</box>
+                           <box n="4">*Then why'd you kill my brother?</box>
+               </conditions>
+           </sp>
+    </setting>
+    </path>
+       <path route="neutral">
+    <setting name="throneRoomEntrance">
+        <sp speaker="game" to="you">
+            <box n="1">Throne Room.</box>
+        </sp>
+    </setting>    
+    <setting name="throneRoom">
+        <sp speaker="Asgore" to="you">
+            <box n="1">*Dum deed um...</box>
+            <box n="2">*Oh?*Is someone there?</box>
+            <box n="3">*Just a moment!</box>
+            <box n="4">*I have almost finished watering these flowers.</box>
+            <box n="5">*...Here we are!</box>
+            <box n="6">*Howdy!*How can I...</box>
+            <box n="7">*Oh.</box>
+            <box n="8">*...</box>
+            <box n="9">*I so badly want to say, "would you like a cup of tea?"</box>
+            <box n="10">But...</box>
+            <box n="11">*You know how it is.</box>
+            <box n="12">*Nice day today, huh?</box>
+            <box n="13">*Birds are singing, flowers are blooming...</box>
+            <box n="14">*Perfect weather for a game of catch.</box>
+            <box n="15">*...</box>
+            <box n="16">*You know what we must do.</box>
+            <box n="17">*When you are ready, come into the next room.</box>
+        </sp>
+        <sp speaker="game" to="you">
+            <box n="1">*(It's a throne.)</box>
+            <box n="2">*(It's another throne covered by a white sheet.)</box>
+        </sp>
+    </setting>
+    <setting name="theEnd">
+        <sp speaker="Asgore" to="you">
+            <box n="1">*How tense...</box>
+            <box n="2">*Just think of it like...</box>
+            <box n="3">*A visit to the dentist.</box>
+            <box n="4">*Are you ready?</box>
+            <box n="5">*If you are not, I understand.</box>
+            <box n="6">*I am not ready either.</box>
+        </sp>
+    </setting>
+    <setting name="barrier">
+        <sp speaker="Asgore" to="you">
+        <box n="1">*This is the barrier.</box>
+        <box n="2">*This is what keeps us all trapped underground.</box>
+        <box n="3">*...</box>
+        <box n="4">*If...</box>
+        <box n="5">*If by chance you have any unfinished business...</box>
+        <box n="6">*Please do what you must.</box>
+           <box n="1">*...</box>
+           <box n="2">*... I see...</box>
+           <box n="3">*This is it, then.</box>
+           <box n="4">*Ready?</box>
+           <box n="1">*I see.</box>
+           <box n="2">*Anything you want to do is important enough.</box>
+           <box n="3">*Even something as small as reading a book, or taking a walk...</box>
+           <box n="4">*Please take your time.</box>
+           <box n="5">*Oh... *Back so soon?</box>
+           <box n="6">*How are you feeling?</box>
+           <box n="1">*I see.</box>
+           <box n="2">*Do what you have to.</box>
+    </sp>
+    </setting>
+    <setting name="flowey">
+        <sp speaker="game" to="you">
+            <box n="1">Floweytale</box>
+            <box n="2">Long ago, two races ruled over Earth: HUMANS and MONSTERS</box>
+            <box n="3">One day, they all disappeared without a trace.</box>
+        </sp>
+    </setting>
+    <setting name="flowey'sSaveFile">
+        <sp speaker="game" to="you">
+            <box n="1">Flowey LV999 999:99</box>
+            <box n="2">My world</box>
+        </sp>
+    </setting>
+       </path>
+</map>
+       
+
